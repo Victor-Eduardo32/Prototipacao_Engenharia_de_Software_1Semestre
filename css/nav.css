@@ -1,0 +1,51 @@
+#icone-topo-nav {
+    font-size: 50px;
+    margin: 10px;
+    margin-left: 20px;
+}
+
+.nav-btn {
+    text-decoration: none;
+    color: var(--secundary-color);
+}
+
+.navegacao {
+    position: relative;
+    display: flex;
+    height: calc(100% - 95px);
+    flex-direction: column;
+    width: 200px;
+    align-items: center;
+    background: var(--primary-color);
+    transition: all 1s ease;
+    padding-top: 20px;
+}
+
+.icone-nav {
+    font-size: 30px;
+    color: var(--secundary-color);
+    margin-top: 25px;
+    transition: all 1s ease;
+    text-decoration: none;
+}
+
+.nome-aba {
+    align-self: center;
+    font-family: "Roboto", sans-serif;
+    color: var(--secundary-color);
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all 1s ease;
+}
+
+.navegacao-antes {
+    position: relative;
+    width: 0;
+    height: calc(100% - 75px);
+    transition: all 1s ease;
+}
+
+.icone-nav-antes, 
+.nome-aba-antes {
+    font-size: 0;
+}

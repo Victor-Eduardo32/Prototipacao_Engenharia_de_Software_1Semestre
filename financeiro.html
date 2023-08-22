@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financeiro</title>
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/financeiro.css">
+    <script src="js/nav.js" defer></script>
+    <script src="js/financeiro.js" defer></script>
+</head>
+<body>
+    <header class="topo">
+        <i class="material-icons" id="icone-topo-nav"><a href="#" class="nav-btn">dehaze</a></i>
+        <i class="material-icons" id="icone-topo">local_mall</i>
+    </header>
+    <main class="corpo-financeiro">
+        <h1 class="titulo" id="concluido">Pedidos Concluídos <icon class="material-icons mostrar">chevron_right</icon></h1>
+        <div id="corpo-concluido">
+            <div class="data-input">
+                <label for="data-inicial" class="nome-data">Data Inicial</label>
+                <input type="date" name="data-inicial" class="data-inicial">
+                <label for="data-final" class="nome-data">Data Final</label>
+                <input type="date" name="data-final" class="data-final">
+            </div>
+            <table class="tabela">
+                <thead>
+                    <tr>
+                        <th id="nome-cab">Nome</th>
+                        <th id="categoria-cab">Categoria</th>
+                        <th id="valor-cab">Valor</th>
+                        <th id="quant-cab">Quantidade</th>
+                        <th id="acoes">Data</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hambúrguer de Frango</td>
+                        <td>Salgado</td>
+                        <td>R$20,00</td>
+                        <td>5</td>
+                        <td>14/04/2022</td>
+                    </tr>
+                    <tr>
+                        <td>Coxinha de Frango</td>
+                        <td>Salgado</td>
+                        <td>R$15,00</td>
+                        <td>3</td>
+                        <td>14/04/2022</td>
+                    </tr>
+                    <tr>
+                        <td>Coxinha de Frango c/ Catupiry</td>
+                        <td>Salgado</td>
+                        <td>R$45,50</td>
+                        <td>7</td>
+                        <td>14/04/2022</td>
+                    </tr>
+                    <tr>
+                        <td>Refri de Guaraná</td>
+                        <td>Bebida</td>
+                        <td>R$12,00</td>
+                        <td>3</td>
+                        <td>11/04/2022</td>
+                    </tr>
+                    <tr>
+                        <td>Esfiha de Carne</td>
+                        <td>Comida</td>
+                        <td>R$20,00</td>
+                        <td>4</td>
+                        <td>09/04/2022</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h1 class="titulo" id="cancelado">Pedidos Cancelados <icon class="material-icons mostrar">chevron_right</icon></h1>
+        <div id="corpo-cancelado">
+            <div class="data-input">
+                <label for="data-inicial" class="nome-data">Data Inicial</label>
+                <input type="date" name="data-inicial" class="data-inicial">
+                <label for="data-final" class="nome-data">Data Final</label>
+                <input type="date" name="data-final" class="data-final">
+            </div>
+            <table class="tabela">
+                <thead>
+                    <tr>
+                        <th id="nome-cab">Nome</th>
+                        <th id="categoria-cab">Categoria</th>
+                        <th id="valor-cab">Valor</th>
+                        <th id="quant-cab">Quantidade</th>
+                        <th id="acoes">Data</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hambúrguer de Carne</td>
+                        <td>Salgado</td>
+                        <td>R$10,00</td>
+                        <td>2</td>
+                        <td>14/04/2022</td>
+                    </tr>
+                    <tr>
+                        <td>Coxinha de Frango</td>
+                        <td>Salgado</td>
+                        <td>R$5,00</td>
+                        <td>1</td>
+                        <td>14/04/2022</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Refri de Guaraná</td>
+                        <td>Bebida</td>
+                        <td>R$12,00</td>
+                        <td>1</td>
+                        <td>11/04/2022</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h1 class="titulo" id="faturamento">Faturamento <icon class="material-icons mostrar">chevron_right</icon></h1>
+        <div id="corpo-faturamento">
+            <div class="data-input">
+                <label for="data-inicial" class="nome-data">Data Inicial</label>
+                <input type="date" name="data-inicial" class="data-inicial">
+                <label for="data-final" class="nome-data">Data Final</label>
+                <input type="date" name="data-final" class="data-final">
+            </div>
+            <table class="tabela">
+                <thead>
+                    <tr>
+                        <th id="fatu-con">Pedidos Concluídos</th>
+                        <th id="fatu-can">Pedidos Cancelados</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="valor-con">R$1525,00</td>
+                        <td id="valor-can">R$126,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </main>
+    
+    <nav class="navegacao-antes">
+        <i class="material-icons" id="pedidos-icon"><a href="pedidos.html" class="icone-nav-antes">shopping_cart</a></i>
+        <h1 class="nome-aba-antes">Pedidos</a></h1>
+        <i class="material-icons" id="financeiro-icon"><a href="financeiro.html" class="icone-nav-antes">poll</a></i>
+        <h1 class="nome-aba-antes">Financeiro</h1>
+        <i class="material-icons" id="produtos-icon"><a href="produtos.html" class="icone-nav-antes">local_pizza</a></i>
+        <h1 class="nome-aba-antes">Produtos</a></h1>
+        <i class="material-icons" id="funcionario-icon"><a href="funcionarios.html" class="icone-nav-antes">face</a></i>
+        <h1 class="nome-aba-antes">Funcionários</h1>
+    </nav> 
+</body>
+</html>

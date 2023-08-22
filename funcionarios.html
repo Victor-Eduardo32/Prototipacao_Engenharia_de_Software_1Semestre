@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionários</title>
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/funcionarios.css">
+    <script src="js/nav.js" defer></script>
+    <script src="js/funcionarios.js" defer></script>
+</head>
+<body>
+    <header class="topo">
+        <i class="material-icons" id="icone-topo-nav"><a href="#" class="nav-btn">dehaze</a></i>
+        <i class="material-icons" id="icone-topo">local_mall</i>
+    </header>
+    <main class="corpo-funcionarios">
+        <div class="inputs">
+            <i class="material-icons" id="icone-pesquisar">search</i>
+            <input type="text" name="" id="pesquisar" placeholder="Pesquisar">
+            <input type="button" value="Adicionar Funcionário" id="add-btn">
+       </div>
+       <div id="add-funcionario">
+            <div class="campo-add">
+                <div class="btn-voltar">
+                    <icon class="material-icons" id="icon-voltar">arrow_back</icon> 
+                    <p>Voltar</p>
+                </div>
+                <label for="nome-funcionario">Coloque o nome do funcionário:</label>
+                <input type="text" name="nome" id="nome-funcionario" class="input-add">
+                <label for="valor-salarial">Digite o salário:</label>
+                <input type="number" name="valor" id="valor-salarial" class="input-add" placeholder="00.00">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" name="telefone" id="telefone-funcionario" class="input-add" placeholder="(XX) XXXXX-XXXX">
+                <label for="horas">Digite quantas horas ele trabalha:</label>
+                <input type="time" name="horas" id="horas-funcionario" class="input-add">
+                <label for="email">Digite o Email: </label>
+                <input type="email" name="email" id="email-funcionario" class="input-add">
+                <label for="senha">Digite a Senha: </label>
+                <input type="text" name="senha" id="senha-funcionario" class="input-add">
+                <input type="file" name="imagem" id="imagem-funcionario">
+                <input type="submit" value="Adicionar" id="btn-final">
+                <input type="submit" value="Editar" id="btn-final-editar">
+            </div>
+        </div>
+        <div id="remover-funcionario">
+            <div class="campo-remover">
+                <h1>Tem certeza que deseja excluir esse funcionário?</h1>
+                <input type="button" value="Não" id="btn-nao">
+                <input type="button" value="Sim" id="btn-sim">
+            </div>
+        </div>
+        <div id="funcionarios">
+            <icon class="material-icons icon-funcionario">account_circle</icon>
+            <table class="tabela">   
+                <thead>
+                    <tr class="titulo-info">
+                        <th>Nome</th>
+                        <th>Salário</th>
+                        <th>Telefone</th>
+                        <th>Expediente</th>
+                    </tr>
+                </thead>
+                <tbody class="primeira-info-funcionario">
+                    <tr class="primeira-info">    
+                        <td class="info-funcionario-1">Roberta da Silva</td>
+                        <td class="info-funcionario-2">R$700.00</td>
+                        <td class="info-funcionario-3">(77)99845-9820</td>
+                        <td class="info-funcionario-4">08:00</td>
+                    </tr>
+                </tbody> 
+                <thead>
+                    <tr>
+                        <th>Email</th>
+                        <th>Senha</th>
+                    </tr>
+                </thead>
+                <tbody class="segunda-info-funcionario">
+                    <tr class="segunda-info">      
+                        <td class="info-funcionario-5">roberta@gmail.com</td>
+                        <td class="info-funcionario-6">roberta123</td>
+                    </tr>
+                </tbody> 
+                <tbody class="icones-funcionario">
+                    <tr>
+                        <td class="icon-edit"><i class="material-icons btn-editar">edit</i></td>
+                        <td class="icon-delete"><i class="material-icons btn-excluir">delete</i></td>
+                    </tr>
+                </tbody>
+            </table>
+            <icon class="material-icons icon-funcionario">account_circle</icon>
+            <table class="tabela">   
+                <thead>
+                    <tr class="primeiro-titulo-info">
+                        <th>Nome</th>
+                        <th>Salário</th>
+                        <th>Telefone</th>
+                        <th>Expediente</th>
+                    </tr>
+                </thead>
+                <tbody class="primeira-info-funcionario">
+                    <tr class="primeira-info">    
+                        <td class="info-funcionario-1">Gustavo Ribeiro</td>
+                        <td class="info-funcionario-2">R$500.00</td>
+                        <td class="info-funcionario-3">(77)9925-9670</td>
+                        <td class="info-funcionario-4">06:00</td>
+                    </tr>
+                </tbody> 
+                <thead>
+                    <tr class="segundo-titulo-info">
+                        <th>Email</th>
+                        <th>Senha</th>
+                    </tr>
+                </thead>
+                <tbody class="segunda-info-funcionario">
+                    <tr class="segunda-info">    
+                        <td class="info-funcionario-5">gustavo@gmail.com</td>
+                        <td class="info-funcionario-6">gustavoribs123</td>
+                    </tr>                   
+                </tbody> 
+                <tbody class="icones-funcionario">
+                    <tr>
+                        <td class="icon-edit"><i class="material-icons btn-editar">edit</i></td>
+                        <td class="icon-delete"><i class="material-icons btn-excluir">delete</i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+
+    <nav class="navegacao-antes">
+        <i class="material-icons" id="pedidos-icon"><a href="pedidos.html" class="icone-nav-antes">shopping_cart</a></i>
+        <h1 class="nome-aba-antes">Pedidos</a></h1>
+        <i class="material-icons" id="financeiro-icon"><a href="financeiro.html" class="icone-nav-antes">poll</a></i>
+        <h1 class="nome-aba-antes">Financeiro</h1>
+        <i class="material-icons" id="produtos-icon"><a href="produtos.html" class="icone-nav-antes">local_pizza</a></i>
+        <h1 class="nome-aba-antes">Produtos</a></h1>
+        <i class="material-icons" id="funcionario-icon"><a href="funcionarios.html" class="icone-nav-antes">face</a></i>
+        <h1 class="nome-aba-antes">Funcionários</h1>
+    </nav>  
+</body> 
+</html>

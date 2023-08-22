@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/pedidos.css">
+    <script src="js/nav.js" defer></script>
+    <script src="js/pedidos.js" defer></script>
+</head>
+<body>
+    <header class="topo">
+        <i class="material-icons" id="icone-topo-nav"><a href="#" class="nav-btn">dehaze</a></i>
+        <i class="material-icons" id="icone-topo">local_mall</i>
+    </header>
+    <main class="corpo-pedidos">
+        <div class="inputs">
+            <i class="material-icons" id="icone-pesquisar">search</i>
+            <input type="search" name="" id="pesquisar" placeholder="Pesquisar">
+            <input type="button" class="impressao off" value="Impressão Automática">
+            <input type="button" value="Adicionar Pedido" id="add-btn">
+       </div>
+       <div id="add-pedidos">
+        <div class="campo-add">
+            <div class="btn-voltar">
+                <icon class="material-icons" id="icon-voltar">arrow_back</icon> 
+                <p>Voltar</p>
+            </div>
+            <label for="numero-pedido">Coloque o número do pedido:</label>
+            <input type="number" name="nome" id="numero-input" class="input-add" laceholder="Nome do Produto">
+            <label for="produtos">Escolha os produtos:</label>
+            <input list="categoria" name="produtos" id="produtos-input" class="input-add">
+                <datalist id="categoria">
+                    <option value="Hambúrguer de Carne">
+                    <option value="Coxinha">
+                    <option value="Refri">
+                    <option value="Água">
+                </datalist>
+            <label for="valor-produto">Digite o valor:</label>
+            <input type="text" name="valor" id="valor-input" class="input-add" placeholder="00.00">
+
+            <input type="submit" value="Adicionar" id="btn-final">
+        </div>
+    </div>
+       <div id="cancelar-pedido">
+            <div class="campo-remover">
+                <h1>Tem certeza que deseja cancelar esse pedido?</h1>
+                <input type="button" value="Não" id="btn-nao-can">
+                <input type="button" value="Sim" id="btn-sim-can">
+            </div>
+        </div>
+        <div id="finalizar-pedido">
+            <div class="campo-remover">
+                <h1>Tem certeza que deseja finalizar esse pedido?</h1>
+                <input type="button" value="Não" id="btn-nao-con">
+                <input type="button" value="Sim" id="btn-sim-con">
+            </div>
+       </div>
+        <table class="pedidos">
+            <tbody id="info-pedidos">
+                <tr>
+                    <td class="numero-pedido">43</td>
+                    <td class="produto-pedido">Hambúrguer de Carne + Refri</td>
+                    <td class="valor-pedido">R$10,00</td> 
+                    <td>                     
+                        <a href="#"><i class="material-icons imprimir">print</i></a>
+                        <a href="#"><i class="material-icons red-text cancelar">cancel</i></a>
+                        <a href="#"><i class="material-icons green-text finalizar">check_circle</i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="numero-pedido">62</td>
+                    <td class="produto-pedido">Hambúrguer de Carne</td>
+                    <td class="valor-pedido">R$6,00</td> 
+                    <td>                     
+                        <a href="#"><i class="material-icons imprimir">print</i></a>
+                        <a href="#"><i class="material-icons red-text cancelar">cancel</i></a>
+                        <a href="#"><i class="material-icons green-text finalizar">check_circle</i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="numero-pedido">30</td>
+                    <td class="produto-pedido">Esfiha de Frango + Água</td>
+                    <td class="valor-pedido">R$8,00</td> 
+                    <td>                     
+                        <a href="#"><i class="material-icons imprimir">print</i></a>
+                        <a href="#"><i class="material-icons red-text cancelar">cancel</i></a>
+                        <a href="#"><i class="material-icons green-text finalizar">check_circle</i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="numero-pedido">27</td>
+                    <td class="produto-pedido">Coxinha + Refri</td>
+                    <td class="valor-pedido">R$10,00</td> 
+                    <td>                     
+                        <a href="#"><i class="material-icons imprimir">print</i></a>
+                        <a href="#"><i class="material-icons red-text cancelar">cancel</i></a>
+                        <a href="#"><i class="material-icons green-text finalizar">check_circle</i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="numero-pedido">85</td>
+                    <td class="produto-pedido">Refri</td>
+                    <td class="valor-pedido">R$4,00</td> 
+                    <td>                     
+                        <a href="#"><i class="material-icons imprimir">print</i></a>
+                        <a href="#"><i class="material-icons red-text cancelar">cancel</i></a>
+                        <a href="#"><i class="material-icons green-text finalizar">check_circle</i></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <nav class="navegacao-antes">
+        <i class="material-icons" id="pedidos-icon"><a href="pedidos.html" class="icone-nav-antes">shopping_cart</a></i>
+        <h1 class="nome-aba-antes">Pedidos</a></h1>
+        <i class="material-icons" id="financeiro-icon"><a href="financeiro.html" class="icone-nav-antes">poll</a></i>
+        <h1 class="nome-aba-antes">Financeiro</h1>
+        <i class="material-icons" id="produtos-icon"><a href="produtos.html" class="icone-nav-antes">local_pizza</a></i>
+        <h1 class="nome-aba-antes">Produtos</a></h1>
+        <i class="material-icons" id="funcionario-icon"><a href="funcionarios.html" class="icone-nav-antes">face</a></i>
+        <h1 class="nome-aba-antes">Funcionários</h1>
+    </nav>  
+</body>
+</html>

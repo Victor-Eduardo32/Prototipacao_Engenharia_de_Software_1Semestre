@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/produtos.css">
+    <script src="js/nav.js" defer></script>
+    <script src="js/produtos.js"></script>
+</head>
+<body>
+    <header class="topo">
+        <i class="material-icons" id="icone-topo-nav"><a href="#" class="nav-btn">dehaze</a></i>
+        <i class="material-icons" id="icone-topo">local_mall</i>
+    </header>
+    <main class="corpo-pedidos">
+        <div class="inputs">
+            <i class="material-icons" id="icone-pesquisar">search</i>
+            <input type="text" name="" id="pesquisar" placeholder="Pesquisar">
+            <input type="button" value="Adicionar Produto" id="add-btn">
+       </div>
+        <div id="add-produtos">
+            <div class="campo-add">
+                <div class="btn-voltar">
+                    <icon class="material-icons" id="icon-voltar">arrow_back</icon> 
+                    <p>Voltar</p>
+                </div>
+                <label for="nome-produto">Coloque o nome de seu produto:</label>
+                <input type="text" name="nome" id="nome-produto" class="input-add" laceholder="Nome do Produto">
+                <label for="valor-produto">Digite o valor:</label>
+                <input type="text" name="valor" id="valor-produto" class="input-add" placeholder="00.00">
+                <label for="quantidade-produto">Quantidade disponível:</label>
+                <input type="number" name="quantidade" id="quant-produto" class="input-add" placeholder="0">
+                <label for="categoria-produto">Escolha a categoria</label>
+                <input list="categoria" name="categoria-seleção" id="categoria-produto" class="input-add">
+                <datalist id="categoria">
+                    <option value="Salgado">
+                    <option value="Bebida">
+                    <option value="Doces">
+                    <option value="Balinhas">
+                </datalist>
+                  
+                <input type="submit" value="Adicionar" id="btn-final">
+                <input type="submit" value="Editar Produto" id="btn-editar">
+            </div>
+        </div>
+        
+        <div id="remover-produto">
+            <div class="campo-remover">
+                <h1>Tem certeza que deseja excluir esse produto?</h1>
+                <input type="button" value="Não" id="btn-nao">
+                <input type="button" value="Sim" id="btn-sim">
+            </div>
+        </div>
+        <div class="pedidos">
+            <table id="tabela">
+                <thead>
+                    <tr>
+                        <th id="nome-cab">Nome</th>
+                        <th id="categoria-cab">Categoria</th>
+                        <th id="valor-cab">Valor</th>
+                        <th id="quant-cab">Quantidade</th>
+                        <th id="acoes">Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="info-produto">
+                    <tr class="produto-val">
+                        <td class="nome">Hambúrguer de Carne</td>
+                        <td class="categoria">Comida</td>
+                        <td class="valor">R$6,00</td>
+                        <td class="quant">43</td>
+                        <td class="acoes-btn">
+                            <i class="material-icons btn-editar">edit</i>
+                            <i class="material-icons btn-excluir">delete</i>
+                            <i class="material-icons btn-copiar">content_copy</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="nome">Esfiha de Carne</td>
+                        <td class="categoria">Salgado</td>
+                        <td class="valor">R$5,50</td>
+                        <td class="quant">36</td>
+                        <td class="acoes-btn">
+                            <i class="material-icons btn-editar">edit</i>
+                            <i class="material-icons btn-excluir">delete</i>
+                            <i class="material-icons btn-copiar">content_copy</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="nome">Coxinha</td>
+                        <td class="categoria">Salgado</td>
+                        <td class="valor">R$5,00</td>
+                        <td class="quant">17</td>
+                        <td class="acoes-btn">
+                            <i class="material-icons btn-editar">edit</i>
+                            <i class="material-icons btn-excluir">delete</i>
+                            <i class="material-icons btn-copiar">content_copy</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="nome">Sorvete</td>
+                        <td class="categoria">Doces</td>
+                        <td class="valor">R$4,00</td>
+                        <td class="quant">54</td>
+                        <td class="acoes-btn">
+                            <i class="material-icons btn-editar">edit</i>
+                            <i class="material-icons btn-excluir">delete</i>
+                            <i class="material-icons btn-copiar">content_copy</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="nome">Garrafa de Água</td>
+                        <td class="categoria">Bebida</td>
+                        <td class="valor">R$2,00</td>
+                        <td class="quant">13</td>
+                        <td class="acoes-btn">
+                            <i class="material-icons btn-editar">edit</i>
+                            <i class="material-icons btn-excluir">delete</i>
+                            <i class="material-icons btn-copiar">content_copy</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="nome">Refigerante</td>
+                        <td class="categoria">Bebida</td>
+                        <td class="valor">R$4,00</td>
+                        <td class="quant">25</td>
+                        <td class="acoes">
+                            <i class="material-icons btn-editar">edit</i>
+                            <i class="material-icons btn-excluir">delete</i>
+                            <i class="material-icons btn-copiar">content_copy</i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </main>
+    
+    <nav class="navegacao-antes">
+        <i class="material-icons" id="pedidos-icon"><a href="pedidos.html" class="icone-nav-antes">shopping_cart</a></i>
+        <h1 class="nome-aba-antes">Pedidos</a></h1>
+        <i class="material-icons" id="financeiro-icon"><a href="financeiro.html" class="icone-nav-antes">poll</a></i>
+        <h1 class="nome-aba-antes">Financeiro</h1>
+        <i class="material-icons" id="produtos-icon"><a href="produtos.html" class="icone-nav-antes">local_pizza</a></i>
+        <h1 class="nome-aba-antes">Produtos</a></h1>
+        <i class="material-icons" id="funcionario-icon"><a href="funcionarios.html" class="icone-nav-antes">face</a></i>
+        <h1 class="nome-aba-antes">Funcionários</h1>
+    </nav>
+</body>
+</html>

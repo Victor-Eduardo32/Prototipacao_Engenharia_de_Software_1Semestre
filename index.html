@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <header class="topo">
+            <i class="material-icons" id="icone-topo">local_mall</i>
+    </header>
+    <main id="corpo-login">
+        <div id="campo-cadastro">
+            <div id="info-cadastro">
+                <div id="btn-voltar">
+                    <icon class="material-icons" id="icon-voltar">arrow_back</icon> 
+                    <p>Voltar</p>
+                </div>
+                <label for="cadastro-email">Digite seu email:</label>
+                <input type="email" name="cadastro-email" id="cadastro-email" class="input-add">
+                <label for="cadastro-senha">Digite a senha:</label>
+                <input type="password" name="cadastro-senha" id="cadastro-senha" class="input-add">
+
+                <input type="submit" value="Cadastrar" id="btn-final">
+            </div>
+        </div>
+        <div class="saudacao">
+            <i class="material-icons" id="icone-login">input</i>
+            <h1 class="login-name">Login</h1>
+        </div>
+        <form action="/produtos.html" method="get" class="login">
+            <input type="email" name="" id="email-login" placeholder="Email" required>
+            <input type="password" name="" id="senha-login" placeholder="Senha" required>
+            <input type="submit" value="Entrar" href="produtos.html" class="btn-login"> 
+        </form>
+        
+        <h1 id="criar-conta">Criar Conta?</h1>
+    </main>
+</body>
+</html>

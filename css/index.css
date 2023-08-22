@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+:root {
+    --primary-color: #e74328;
+    --secundary-color: #F5F5F5;
+}
+
+body {
+    height: 100vh;
+    width: 680px;
+    margin: auto; 
+    border: 5px solid #000000;
+    background: #4F4F4F;
+}
+
+#corpo-login {
+        position: absolute;
+        background: var(--secundary-color);
+        height: calc(100% - 75px);
+        width: 680px;
+        overflow: auto;
+}
+.topo {
+    background: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    height: 75px;
+}
+
+#icone-topo {
+    font-size: 50px;
+    margin: 10px;
+}
+
+#campo-cadastro {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0, 0.60);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+#info-cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--secundary-color);
+    margin: 100px auto;
+    width: 550px;
+    height: 300px;
+    border-radius: 30px;
+    font-family: "Roboto", sans-serif;
+    animation: aparecer 1.5s;
+}
+
+#btn-voltar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+#icon-voltar {
+    margin-right: 5px;
+}
+
+.input-add {
+    margin: 8px 0 20px 0;
+    border: transparent;
+    background: transparent;
+    border-bottom: 3px solid var(--primary-color);
+    font-size: 15px
+}
+
+.input-add:focus {
+    outline: none;
+}
+
+#btn-final {
+    width: 170px;
+    height: 25px;
+    margin: 10px 15px 0;
+    background:  transparent;
+    border: 4px double var(--primary-color);
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    transition: all 1s ease;
+}
+
+.saudacao {
+    background: var(--secundary-color);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 165px;
+}
+
+#icone-login {
+    font-size: 40px;
+}
+
+.login-name {
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    margin: 0 15px 0 15px;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+    background: var(--secundary-color);
+}
+
+#email-login,
+#senha-login {
+    margin: 10px;
+    height: 45px;
+    width: 300px;
+    border: none;
+    border-bottom: 2px solid #000000;
+    background: transparent;
+}
+
+.btn-login {
+    margin-top: 55px;
+    width: 150px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 15px;
+    transition: 1s all ease;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn-login:hover {
+    width: 190px;
+    height: 50px;
+    transition: 1s, 1s;
+    font-size: 20px;
+    color: var(--secundary-color);
+    background: var(--primary-color);
+}
+
+#criar-conta {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;      
+        transform: translateY(-35%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
