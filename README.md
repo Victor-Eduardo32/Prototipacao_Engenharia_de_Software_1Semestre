@@ -1,1 +1,1 @@
-Projeto Pessoal para a matéria de engenharia de software
+Projeto pessoal para a matéria de engenharia de software
